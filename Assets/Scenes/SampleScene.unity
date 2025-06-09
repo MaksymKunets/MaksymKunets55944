@@ -793,6 +793,11 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!1 &524023355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6348234003444347399, guid: 259dfee94b805234ab4644db047f425d, type: 3}
+  m_PrefabInstance: {fileID: 1688723978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &615843389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1000,7 +1005,6 @@ GameObject:
   - component: {fileID: 1099722221}
   - component: {fileID: 1099722220}
   - component: {fileID: 1099722219}
-  - component: {fileID: 1099722218}
   - component: {fileID: 1099722217}
   - component: {fileID: 1099722216}
   m_Layer: 0
@@ -1055,7 +1059,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1071,21 +1075,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1099722218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099722215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
-    _objectReferences: []
 --- !u!114 &1099722219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,8 +1088,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"aster","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 524023355}
 --- !u!212 &1099722220
 SpriteRenderer:
   m_ObjectHideFlags: 0
